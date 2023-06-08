@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<%
+	String path = request.getContextPath();
+	StringBuffer url = request.getRequestURL();
+	String uri = request.getRequestURI();
+	String remote = request.getRemoteAddr();
+	String header = request.getHeader("content-type");
+
+%>
+    
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	context path : <%=path %><br/>
+	url : <%=url %><br/>
+	uri : <%=uri %><br/>
+	remote addr : <%= remote %><br/>
+	header : <%= header %><br/>
+
+
+</body>
+</html>

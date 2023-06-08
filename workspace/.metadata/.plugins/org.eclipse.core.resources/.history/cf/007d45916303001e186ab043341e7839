@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<%
+	//application 객체는 session과 사용방법이 동일
+	application.setAttribute("count", 1);
+	
+	//값의 사용
+	int count = (int)application.getAttribute("count");
+	
+
+%>    
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	결과: <%=count %>
+	
+</body>
+</html>
