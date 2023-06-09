@@ -1,4 +1,5 @@
 #Tomcat publish data
-#Fri Jun 09 16:55:10 KST 2023
+#Fri Jun 09 21:10:41 KST 2023
+org.eclipse.jst.jee.server\:JSPProject=C\:\\Users\\user\\Desktop\\course\\jsp\\apache-tomcat-9.0.75\\wtpwebapps\\JSPProject
 org.eclipse.jst.jee.server\:JSPBasic=C\:\\Users\\user\\Desktop\\course\\jsp\\apache-tomcat-9.0.75\\wtpwebapps\\JSPBasic
 org.eclipse.jst.jee.server\:JSPWeb=C\:\\Users\\user\\Desktop\\course\\jsp\\apache-tomcat-9.0.75\\wtpwebapps\\JSPWeb
