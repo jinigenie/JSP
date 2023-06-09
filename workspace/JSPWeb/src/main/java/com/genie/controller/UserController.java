@@ -1,6 +1,8 @@
 package com.genie.controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -46,7 +48,7 @@ public class UserController extends HttpServlet {
 		//** 리다이렉트는 다시 컨트롤러를 태워 나가는 용도로 사용
 		
 		UserService service = new UserServiceImpl();
-		
+		HttpSession session = request.getSession();
 		
 		if(command.equals("/user/user_join.user")) {
 			
@@ -83,11 +85,57 @@ public class UserController extends HttpServlet {
 			} else { // 로그인 성공
 				
 				// 세션에 회원정보 저장 (자바에서 세션 얻는 방법)
-				HttpSession session = request.getSession();
 				session.setAttribute("user_id", vo.getId());
 				session.setAttribute("user_name", vo.getName());
 				
 				response.sendRedirect("user_mypage.user");
+				
+			}
+			
+		//마이페이지
+		} else if(command.equals("/user/user_mypage.user")){
+			
+			request.getRequestDispatcher("user_mypage.jsp").forward(request, response);
+			
+			
+		//로그아웃	
+		} else if(command.equals("/user/user_logout.user")){
+			
+			
+			session.invalidate();
+			response.sendRedirect("user_login.user");
+			
+		
+		//정보수정
+		} else if(command.equals("/user/user_modify.user")){
+			
+			//회원정보 가지고 나가기
+			UserVO vo = service.getInfo(request, response);
+			request.setAttribute("vo", vo);
+			
+			request.getRequestDispatcher("user_modify.jsp").forward(request, response);
+			
+		//정보수정
+		} else if(command.equals("/user/user_update.user")) {
+			
+			int res = service.updateInfo(request, response);
+			
+			if(res == 1) {
+				
+				String name = request.getParameter("name");
+				session.setAttribute("user_name", name);
+				
+				// out 객체를 이용한 메시지 전달
+				response.setContentType("text/html; charset=utf-8;");
+				PrintWriter out = response.getWriter();
+				out.println("<script>");
+				out.println("alert('정보가 수정되었습니다!')");
+				out.println("location.href='user_mypage.user';");
+				out.println("</script>");
+				
+//				response.sendRedirect("user_mypage.user");
+			} else {
+				response.sendRedirect("user_modify.user");
 				
 			}
 			

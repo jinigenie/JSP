@@ -11,16 +11,17 @@
 		(${sessionScope.user_name }) 님의 정보를 관리 중입니다. 
 		
 		<br>
-		<a href="#">회원수정</a>
+		<a href="user_modify.user">회원수정</a>
+		
 		<a href="user_logout.user">로그아웃</a>
 		
 		<a href="#">회원탈퇴</a>
 
 		
 	</div>
-	
-	
 
 </section>
+
+
 
 <%@ include file="../include/footer.jsp"%>

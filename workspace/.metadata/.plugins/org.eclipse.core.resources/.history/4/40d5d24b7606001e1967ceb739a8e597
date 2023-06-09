@@ -1,0 +1,5 @@
+package com.genie.board.model;
+
+public class BoardVO {
+
+}
