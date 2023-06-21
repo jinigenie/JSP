@@ -224,3 +224,16 @@
 0:0:0:0:0:0:0:1 - - [09/Jun/2023:20:36:45 +0900] "GET /JSPMiniProject/user/user_join.jsp HTTP/1.1" 200 4638
 0:0:0:0:0:0:0:1 - - [09/Jun/2023:20:36:45 +0900] "GET /JSPMiniProject/css/bootstrap.css HTTP/1.1" 404 847
 0:0:0:0:0:0:0:1 - - [09/Jun/2023:20:36:45 +0900] "GET /JSPMiniProject/css/business-casual.css HTTP/1.1" 404 853
+127.0.0.1 - - [09/Jun/2023:20:59:55 +0900] "GET / HTTP/1.1" 200 11428
+0:0:0:0:0:0:0:1 - - [09/Jun/2023:20:59:56 +0900] "GET /JSPProject/include/header.jsp HTTP/1.1" 200 3271
+0:0:0:0:0:0:0:1 - - [09/Jun/2023:20:59:56 +0900] "GET /JSPProject/css/business-casual.css HTTP/1.1" 200 3309
+0:0:0:0:0:0:0:1 - - [09/Jun/2023:20:59:56 +0900] "GET /JSPProject/js/bootstrap.min.js HTTP/1.1" 200 37045
+0:0:0:0:0:0:0:1 - - [09/Jun/2023:20:59:56 +0900] "GET /JSPProject/css/bootstrap.css HTTP/1.1" 200 146010
+0:0:0:0:0:0:0:1 - - [09/Jun/2023:20:59:56 +0900] "GET /JSPProject/js/jquery.js HTTP/1.1" 200 95785
+0:0:0:0:0:0:0:1 - - [09/Jun/2023:20:59:56 +0900] "GET /JSPProject/img/bg.jpg HTTP/1.1" 200 152880
+0:0:0:0:0:0:0:1 - - [09/Jun/2023:21:00:26 +0900] "GET /JSPProject/css/bootstrap.css.map HTTP/1.1" 404 847
+0:0:0:0:0:0:0:1 - - [09/Jun/2023:21:02:48 +0900] "GET /JSPProject/include/header.jsp HTTP/1.1" 200 3282
+0:0:0:0:0:0:0:1 - - [09/Jun/2023:21:06:50 +0900] "GET /JSPProject/include/header.jsp HTTP/1.1" 200 3282
+0:0:0:0:0:0:0:1 - - [09/Jun/2023:21:06:54 +0900] "GET /JSPProject/include/header.jsp HTTP/1.1" 200 3282
+0:0:0:0:0:0:0:1 - - [09/Jun/2023:21:07:18 +0900] "GET /JSPProject/include/header.jsp HTTP/1.1" 200 3345
+0:0:0:0:0:0:0:1 - - [09/Jun/2023:21:10:42 +0900] "GET /JSPProject/include/header.jsp HTTP/1.1" 200 3358

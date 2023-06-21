@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item key="J2EE_EXPORT_OVERWRITE" value="false"/>
+	<item key="J2EE_EXPORT_SOURCE" value="true"/>
 	<list key="MRU_RUNTIME_STORE">
 		<item value="Apache Tomcat v9.0"/>
+	</list>
+	<list key="J2EE_IMPORT_null">
+		<item value="C:\Users\user\Desktop\project\MINIProject1.6.war"/>
+		<item value="C:\Users\user\Desktop\project\TeamProject1.1jsp (1).war"/>
+	</list>
+	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="C:\Users\user\Desktop\project\TeamProject1.3.war"/>
+		<item value="C:\Users\user\Desktop\project\TeamProject1.2.war"/>
 	</list>
 </section>

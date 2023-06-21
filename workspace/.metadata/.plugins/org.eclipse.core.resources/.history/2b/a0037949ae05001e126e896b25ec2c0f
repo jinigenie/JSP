@@ -1,5 +1,0 @@
-package com.genie.user.service;
-
-public interface UserService {
-
-}

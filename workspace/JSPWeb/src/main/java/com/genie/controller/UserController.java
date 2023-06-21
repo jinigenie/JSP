@@ -53,7 +53,8 @@ public class UserController extends HttpServlet {
 		if(command.equals("/user/user_join.user")) {
 			
 			request.getRequestDispatcher("user_join.jsp").forward(request, response);
-			
+		
+		//로그인
 		} else if(command.equals("/user/user_login.user")) {
 			
 			request.getRequestDispatcher("user_login.jsp").forward(request, response);
@@ -72,7 +73,7 @@ public class UserController extends HttpServlet {
 				response.sendRedirect("user_login.user");
 			}
 			
-		//로그인
+		//로그인 확인
 		} else if(command.equals("/user/loginForm.user")) {
 			
 			UserVO vo = service.login(request, response);
@@ -108,6 +109,13 @@ public class UserController extends HttpServlet {
 		
 		//정보수정
 		} else if(command.equals("/user/user_modify.user")){
+		
+			/*
+			if(session.getAttribute("user_id") == null) {
+				response.sendRedirect("user_login.user");
+				return;
+			} // 회원이 아니면 수정 페이지로 바로 접근 못하도록 막음 --> 필터 이용할 수 있음
+			*/
 			
 			//회원정보 가지고 나가기
 			UserVO vo = service.getInfo(request, response);

@@ -1,4 +1,4 @@
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="com.genie.board.service.BoardService"><rhs name\="com.genie.board.service.BoardServiceImpl"/></lhs></history>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="com.genie.board.service.BoardService"><rhs name\="com.genie.board.service.BoardServiceImpl"/></lhs><lhs name\="com.mini.lookfor.service.LookForService"><rhs name\="com.mini.lookfor.service.LookForServiceImpl"/></lhs><lhs name\="com.mini.lookfor.model.LookForVO"><rhs name\="com.mini.lookfor.model.LookForVO"/></lhs><lhs name\="com.baek.user.service.UserService"><rhs name\="com.baek.user.service.UserServicelmpl"/></lhs><lhs name\="com.oreilly.servlet.multipart.FileRenamePolicy"><rhs name\="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"/></lhs><lhs name\="com.oreilly.servlet.MultipartRequest"><rhs name\="com.oreilly.servlet.MultipartRequest"/></lhs></history>
 content_assist_number_of_computers=17
 content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=0,0,0
